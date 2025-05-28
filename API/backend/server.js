@@ -2,10 +2,10 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-dotenv.config(); // Load env variables from .env
+dotenv.config();
 
 const app = express();
-app.use(express.json()); // Middleware to parse JSON bodies
+app.use(express.json()); 
 
 // MongoDB connection
 const connectDB = async () => {
